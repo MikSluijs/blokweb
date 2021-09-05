@@ -38,12 +38,12 @@ surface plain
 ### Je opdracht:
 https://andersonpaak.com/ 
 
-#### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
+#### Screenshot van de eerste pagina (small screen): 
+Photos
 <img src="images/photos.png" width="375px" alt="Dit zijn fotos die de artiest Anderson. Paak op zijn website laat zien">
 
-#### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
+#### Screenshot van de tweede pagina (small screen):
+Shop
 <img src="images/shop.png" width="375px" alt="Dit is de website van de artiest Anderson. Paak">
  
 </details>
