@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Auteur:
-Mik Sluijs
+Sanne 't Hooft (vervangen door jouw naam)
 
 #### Je startniveau:
-Blauw
+hier je startniveau (kies uit zwart, rood óf blauw)
 
 #### Je focus:
-surface plane
+hier je focus (kies uit responsive óf surface plane)
  
 </details>
 
@@ -34,9 +34,9 @@ surface plane
 
 <details open>
 <summary>uitwerken voor kick-off werkgroep</summary>
- 
+
 ### Je opdracht:
-https://andersonpaak.com/
+link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
