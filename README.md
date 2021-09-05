@@ -40,11 +40,11 @@ https://andersonpaak.com/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+<img src="images/photos.png" width="375px" alt="Dit zijn fotos die de artiest Anderson. Paak op zijn website laat zien">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+<img src="images/shop.png" width="375px" alt="Dit is de website van de artiest Anderson. Paak">
  
 </details>
 
