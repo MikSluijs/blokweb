@@ -39,12 +39,12 @@ surface plain
 https://www.013.nl/
 
 #### Screenshot van de eerste pagina (small screen): 
-Photos
+
 <img src="images/home.png" width="375px" alt="Dit is de website van het podium 013">
 <img src="images/home2.png" width="375px" alt="Dit is de website van het podium 013">
 
 #### Screenshot van de tweede pagina (small screen):
-Shop
+
 <img src="images/detail.png" width="375px" alt="Dit is de website van het podium 013">
 <img src="images/detail2.png" width="375px" alt="Dit is de website van het podium 013">
  
