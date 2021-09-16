@@ -39,7 +39,7 @@ surface plain
 https://www.013.nl/
 
 #### Screenshot van de eerste pagina (small screen): 
-
+ 
 <img src="images/home.png" width="375px" alt="Dit is de website van het podium 013">
 <img src="images/home2.png" width="375px" alt="Dit is de website van het podium 013">
 
@@ -75,18 +75,19 @@ https://www.013.nl/
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik vond het beginnen eraan heel lastig omdat ik eigenlijk niet zo goed wist waar te beginnen, door de breakdown schetsen werd het wel wat makkelijker maar de html was helemaal weg gezakt dus dat was even lastig. Nu ben ik bezig met de css van pagina een en dat gaat ook niet makkelijk, het lukt vaak wel maar met hulp. Ik heb er een details en summary in gedaan maar ik weet niet hoe ik dit ga maken tot een hamburger menu... Daar wil ik aan beginnen zodra de rest er goed genoeg uit ziet. Ik hoop er dit weekend meer tijd aan te besteden zodat ik er sneller in wordt.
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
+| Mik            | Luna               | Reinier      | Lars      |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
+| Ik moet vooral | en dit             | en ik dit    | en dan ik dat    |
+| gewoon tempo   | dit als er tijd is | nog een punt | dit wil ik zeker |
+| gaan maken     | ...                | ...          | ...              |
+  zodat er meer
+  staat.
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
