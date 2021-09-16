@@ -83,8 +83,9 @@ samen met je groepje opstellen
 
 | Mik            | Luna               | Reinier      | Lars      |
 | ---            | ---                | ---          | ---              |
-| Ik moet vooral tempo maken dat er wat staat | en dit             | en ik dit    | en dan ik dat    |
-|                | dit als er tijd is | nog een punt | dit wil ik zeker |
+| Ik moet vooral tempo 
+ maken dat er meer staat | en dit             | en ik dit    | en dan ik dat    |
+| Ik heb                | dit als er tijd is | nog een punt | dit wil ik zeker |
 | | ...                | ...          | ...              |
   
 
