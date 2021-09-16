@@ -1,5 +1,74 @@
 /* CSS Document */
 *, *::after, *::before {
   box-sizing:border-box;  
+  margin: 0;
+}
+
+:root{
+  --main-color:#cfae40;
+  --color2:#fff;
+}
+
+/* ALGEMEEN */
+
+body{
+  background-color: var(--main-color);
+  z-index: -2;
+  padding-bottom: 20em;
+}
+
+H1, h2, h3, p, time{
+  color: var(--color2);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+article{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+/* HEADER */
+header{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+details{
+  color: var(--color2) ;
+  position: fixed;
+  right: 1em;
+  top: .5em;
+}
+
+h1 img{
+  width: 3em;
+  margin:0;
+}
+
+header > a img{
+  position: fixed;
+  right: 5em;
+  top: .5em;
+  width: 25px;
+
+}
+
+/* SECTION EEN */
+section:first-of-type{
+  position: relative;
+  
+}
+
+section:first-of-type img {
+  top: 0;
+  width:100%;
+  z-index: -1;
 }
 
