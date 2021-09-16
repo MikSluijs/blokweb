@@ -83,10 +83,9 @@ samen met je groepje opstellen
 
 | Mik            | Luna               | Reinier      | Lars      |
 | ---            | ---                | ---          | ---              |
-| Ik moet vooral tempo 
- maken dat er meer staat | en dit             | en ik dit    | en dan ik dat    |
+| Ik moet vooral tempo maken dat er meer staat | en dit             | en ik dit    | en dan ik dat    |
 | Hoe maak ik van een details een hamburger menu?| dit als er tijd is | nog een punt | dit wil ik zeker |
-| Hoe krijg je | ...                | ...          | ...              |
+| Hoe krijg je de tekst over een afbeelding? | ...                | ...          | ...              |
   
 
 ### Verslag van meeting
