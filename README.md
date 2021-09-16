@@ -85,7 +85,7 @@ samen met je groepje opstellen
 | ---            | ---                | ---          | ---              |
 | Ik moet vooral tempo 
  maken dat er meer staat | en dit             | en ik dit    | en dan ik dat    |
-| Ik heb                | dit als er tijd is | nog een punt | dit wil ik zeker |
+| Ik heb op dit moment verder niet directe vragen| dit als er tijd is | nog een punt | dit wil ik zeker |
 | | ...                | ...          | ...              |
   
 
