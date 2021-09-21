@@ -7,6 +7,7 @@
 :root{
   --main-color:#cfae40;
   --color2:#fff;
+  --color3:#000;
 }
 
 /* ALGEMEEN */
@@ -27,10 +28,7 @@ a{
   color: black;
 }
 
-article{
-  margin-left: 10px;
-  margin-top: 10px;
-}
+
 
 /* HEADER */
 header{
@@ -44,18 +42,18 @@ details{
   color: var(--color2) ;
   position: fixed;
   right: 1em;
-  top: .5em;
+  top: 1em;
 }
 
 h1 img{
-  width: 3em;
-  margin:0;
+  width: 2.5em;
+  margin:.25em;
 }
 
 header > a img{
   position: fixed;
   right: 5em;
-  top: .5em;
+  top: 1em;
   width: 25px;
 
 }
@@ -69,6 +67,100 @@ section:first-of-type{
 section:first-of-type img {
   top: 0;
   width:100%;
+  padding-bottom: 1em;
+
   z-index: -1;
+
+  background: var(--main-color);
+  opacity: 0.4;
+}
+
+
+section:first-of-type div{
+  position: absolute;
+
+  
+}
+
+section:first-of-type div:nth-of-type(2){
+  position: absolute;
+  top: 5em;
+  left: 6em;
+  right: 6em;
+  display: inline-block;
+  
+  padding: .5em;
+  margin-top: 1em;
+  text-align: center;
+  
+  background-color: var(--color3);
+}
+
+section:first-of-type div:nth-of-type(2) h2{
+  margin-top: 1em;
+}
+
+
+
+/* FROM*/
+
+form{
+  position: absolute;
+  top: 12em;
+  left: 1em;
+  right: 1em;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+form input, select {
+  border-bottom: 3px solid var(--color3) ;
+
+}
+
+form input:first-of-type{
+  margin-bottom: .5em;
+}
+
+/*SECTION TWEE*/
+section:nth-of-type(2){
+  position: relative;
+  top: 17em;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+section:nth-of-type(2) article{
+  display: flex;
+  margin: 0 5em 1.5em 5em;
+
+
+  text-align: center;
+}
+
+
+section:nth-of-type(2) time{
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 16px;
+}
+section:nth-of-type(2) h2, h3{
+  text-transform: uppercase;
+}
+
+section:nth-of-type(2) h2{
+  font-size: 24px;
+}
+
+section:nth-of-type(2) h3{
+  font-size: 14px;
+}
+
+section:nth-of-type(2) p{
+  font-size: 14px;
 }
 

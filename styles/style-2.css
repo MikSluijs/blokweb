@@ -1,0 +1,114 @@
+/* CSS Document */
+*, *::after, *::before {
+    box-sizing:border-box;  
+    margin: 0;
+  }
+  
+  :root{
+    --main-color:#2d65ae;
+    --color2:#fff;
+    --color3:#000;
+    
+  }
+  
+  /* ALGEMEEN */
+  
+  body{
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 20em;
+
+  }
+  
+  H1, h2, h3, p{
+    color: var(--color3);
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  time, span{
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  
+  
+  /* HEADER */
+  header{
+    background-color: var(--main-color);
+
+    position: fixed;
+    width: 100%;
+    
+    z-index:1 ;
+  }
+  
+  details{
+    color: var(--color2) ;
+    position: fixed;
+    right: 1em;
+    top: 1em;
+  }
+  
+  h1 img{
+    width: 2.5em;
+    margin:.25em;
+  }
+  
+  header > a img{
+    position: fixed;
+    right: 5em;
+    top: 1em;
+    width: 25px;
+    color: var(--color3);
+  }
+
+  /*SECTION EEN*/
+  section{
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    top: 5em;
+
+    padding: .5em;
+
+    line-height: 2em;
+    text-align: center;
+  }
+
+  section span, time{
+    background-color: var(--color3);
+    color: var(--color2);
+  }
+
+  section img{
+    width: 100%;
+
+  }
+
+  /*SECTION TWEE*/
+ 
+
+
+  /*ARTICLE EEN*/
+
+  article{
+    position: relative;
+    top: 6em;
+    left: 1em;
+    
+    margin-right: 1.5em;
+
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+
+  
