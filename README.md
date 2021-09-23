@@ -82,9 +82,9 @@ Ik vond het beginnen eraan heel lastig omdat ik eigenlijk niet zo goed wist waar
 samen met je groepje opstellen
 
 | Mik            | Luna               | Reinier      | Lars      |
-| ---            | ---                | ---          | ---              |
-| Ik moet vooral tempo maken dat er meer staat | Ik moet proberen minder divs te gebruiken |     |     |
-| Hoe maak ik van een details een hamburger menu?|  |  |  |
+| ---            |              | ---          | ---              |
+| Ik moet vooral tempo maken dat er meer staat | Ik moet proberen minder divs te gebruiken | Button hover verbeteren    | Hoe uberhaupt te beginnen    |
+| Hoe maak ik van een details een hamburger menu?| Het menu laten mee scrollen |  |  |
 | Hoe krijg je de tekst over een afbeelding? | ...                | ...          | ...              |
   
 
@@ -112,10 +112,10 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
+| Mik     | Luna         | Reinier   | Lars        |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+| Moet alles van de huiswerk opdrachten in de site?  | en dit             | en ik dit    | en dan ik dat    |
+| een vak schuin trekken met css? Moet dat dan met een div?| dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
 
 
