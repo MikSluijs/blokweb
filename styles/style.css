@@ -8,6 +8,7 @@
   --main-color:#cfae40;
   --color2:#fff;
   --color3:#000;
+  
 }
 
 /* ALGEMEEN */
@@ -18,7 +19,7 @@ body{
   padding-bottom: 20em;
 }
 
-H1, h2, h3, p, time{
+H1, h2, h3, p, time, nav{
   color: var(--color2);
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -34,15 +35,72 @@ a{
 header{
   position: fixed;
   width: 100%;
-  height: 100%;
   z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+
 }
 
-details{
-  color: var(--color2) ;
-  position: fixed;
-  right: 1em;
-  top: 1em;
+header h1{
+  margin-right: auto;
+}
+
+.open{
+  transform: translateX(-145vw);
+}
+
+ul{
+  position: absolute;
+  top:0;
+
+  color: var(--color3);
+  background-color: var(--color2);
+
+  list-style: none;
+
+  padding: 1em;
+
+  transform: translateX(-14vh)  translateY(7vh);
+}
+
+nav button, nav button::before, nav button::after{
+  width: 25px;
+  height: 4px;
+  border: none;
+  position: relative;
+}
+
+nav button::before{
+  content: '';
+
+  background-color: var(--color2);
+
+  position: absolute;
+  top: -7px;
+  right: 0;
+}
+
+nav button::after{
+  content: '';
+
+  background-color: var(--color2);
+
+  position: absolute;
+  top: 7px;
+  right: 0;
+  
+}
+
+a, nav{
+  right: 2em;
+  padding-top: .5em;
+  
+}
+
+nav button{
+  margin-right: 1em;
+  margin-left: 1em;
 }
 
 h1 img{
@@ -51,9 +109,6 @@ h1 img{
 }
 
 header > a img{
-  position: fixed;
-  right: 5em;
-  top: 1em;
   width: 25px;
 
 }
@@ -90,14 +145,22 @@ section:first-of-type div:nth-of-type(2){
   display: inline-block;
   
   padding: .5em;
-  margin-top: 1em;
   text-align: center;
-  
+
+}
+
+section:first-of-type div:nth-of-type(2) >*{
   background-color: var(--color3);
+  padding: .2em;
+  
+}
+
+section:first-of-type div:nth-of-type(2){
+  transform: rotate(-10deg);
 }
 
 section:first-of-type div:nth-of-type(2) h2{
-  margin-top: 1em;
+  margin-top: .25em;
 }
 
 
@@ -110,36 +173,48 @@ form{
   left: 1em;
   right: 1em;
   
+  margin-bottom: 1em;
+  
   display: flex;
   flex-direction: column;
+
+  
 }
 
 form input, select {
-  border-bottom: 3px solid var(--color3) ;
+  background-color: var(--main-color);
+  border: none;
+  padding: .5em;
 
+  border-bottom: solid  3px var(--color2);
+  color: var(--color2);
 }
 
 form input:first-of-type{
-  margin-bottom: .5em;
+  margin-bottom: 1em;
+  
+}
+
+form select{
+  margin-bottom: 1em;
+}
+
+input::placeholder{
+  color: var(--color2);
 }
 
 /*SECTION TWEE*/
 section:nth-of-type(2){
   position: relative;
-  top: 17em;
+  top: 19em;
 
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
 }
 
 section:nth-of-type(2) article{
-  display: flex;
-  margin: 0 5em 1.5em 5em;
-
-
-  text-align: center;
+  margin: 0 0 1.5em 1em;
+  text-align: left;
 }
 
 
@@ -147,9 +222,23 @@ section:nth-of-type(2) time{
   text-transform: uppercase;
   font-weight: 900;
   font-size: 16px;
+
+  grid-row-start: -1;
+
 }
+
+
+
 section:nth-of-type(2) h2, h3{
   text-transform: uppercase;
+}
+
+section:nth-of-type(2) a{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-start: 1;
+  margin-right: 1em;
+  
 }
 
 section:nth-of-type(2) h2{
@@ -163,4 +252,5 @@ section:nth-of-type(2) h3{
 section:nth-of-type(2) p{
   font-size: 14px;
 }
+
 
