@@ -47,21 +47,47 @@ header h1{
 }
 
 .open{
-  transform: translateX(-145vw);
+  transform: translateX(-197vw);
+}
+
+.open button:before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.open button:after {
+  transform: rotate(-45deg);
+  top: 0;
 }
 
 ul{
   position: absolute;
-  top:0;
-
+  top:7vh;
+  right: -400px;
   color: var(--color3);
+  text-align: left;
   background-color: var(--color2);
 
   list-style: none;
 
-  padding: 1em;
+  padding: 3em 3em 14em 3em;
+  
+  line-height: 2em;
 
-  transform: translateX(-14vh)  translateY(7vh);
+  
+
+  transition: 250ms;
+  
+}
+
+nav.open ul{
+  right: 0;
+  
+}
+
+ul li:first-of-type, li:nth-of-type(2), li:nth-of-type(3){
+  font-size: 20px;
+  padding-bottom: 1em;
 }
 
 nav button, nav button::before, nav button::after{
@@ -92,15 +118,7 @@ nav button::after{
   
 }
 
-header nav ul .open button::before {
-  transform: rotate(45deg);
-  top: 0;
-}
 
-header nav ul .open button::after {
-  transform: rotate(-45deg);
-  top: 0;
-}
 
 a, nav{
   right: 2em;
