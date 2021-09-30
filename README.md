@@ -122,11 +122,7 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
-
+-Zorg dat je alles wat voor jou relevant is van het huiswerk, verwerkt in je site. De vraag al opgelost door Reinier maar toen was het toch niet gelukt dus heb ik het de volgende les toch nog aan de docent gevraagd
 </details>
 
 
@@ -182,11 +178,11 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
+| Mik            | Luna         | Reinier   | Lars       |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| door de focus komt nu bij het hamburgermenu een border, verpest de 'animatie' een beetje...  | en dit    |   | en dan ik dat    |
+|  | dit als er tijd is | nog een punt | dit wil ik zeker |
+|             | ...                | ...          | ...              |
 
 
 ### Verslag van meeting
