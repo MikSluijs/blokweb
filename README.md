@@ -131,10 +131,10 @@ samen met je groepje opstellen
 ## Toegankelijkheidstest (week 4)
 
 <details>
-<summary> 8e voortgang</summary>
+<summary> Toegankelijkheid test uitkomsten v</summary>
 
 ### Bevindingen
-Lijst met je bevindingen die in de test naar voren kwamen:
+Lijst met mijn bevindingen die in de test naar voren kwamen:
 
 #### De zoekbalk en het hamburger menu eigenlijk vrij klein
 Bij het testen met de ballon opgooien kwamen we er achter dat het zoek tekentje en het icoontje van 
@@ -156,10 +156,12 @@ Met het testen met de bril die een blur heeft was het duidelijk dat de tekst in 
 Als ik het logo zou kunnen aanpassen zou ik kijken of deze tekst dus kan vergroten en zo nodig op een andere plek zetten.
 
 #### Screen reader
-- Headings-> bij de headings klopt bijna alles wel. Bij de H2 zorgen dat niet alles in caps is zodat het door de screen reader normaal wordt voorgelezen.
-- Links-> Er zijn in de links een aantal afkortingen die ik door de screenreader als volledige woorden zou willen laten uitspreken als ik de tijd had. 
+- Headings
+->Bij de headings klopt bijna alles wel. Bij de H2 zorgen dat niet alles in caps is zodat het door de screen reader normaal wordt voorgelezen.
+- Links
+->Er zijn in de links een aantal afkortingen die ik door de screenreader als volledige woorden zou willen laten uitspreken als ik de tijd had. 
 Ook denk ik dat het beter is als bij de articles alleen de "datum, artiest" worden genoemd door de screen reader omdat dit alleen de meest belangrijke informatie is die je nodig hebt om te weten of je verder zou willen kijken.
-Ook waren in mijn menu nog niet alle opties een echt linkje waardoor deze ook niet werden voorgelezen door de screen reader, dit heb ik aangepast door alles een linkje naar de home pagina te geven zodat de screenreader deze ziet en voorleest, in de echte site zou dit natuurlijk naar de betrefende pagina gaan. 
+Ook waren in mijn menu nog niet alle opties een echt linkje waardoor deze ook niet werden voorgelezen door de screen reader, dit heb ik aangepast door alles een linkje naar de home pagina te geven zodat de screenreader deze ziet en voorleest, in de echte site zou deze link natuurlijk naar de betrefende pagina gaan. 
  
 
 </details>
