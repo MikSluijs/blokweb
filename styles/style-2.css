@@ -5,7 +5,7 @@
   }
   
   :root{
-    --main-color:#2d65ae;
+    --color5:#2d65ae;
     --color2:#fff;
     --color3:#000;
     
@@ -32,21 +32,14 @@
   
   a{
     text-decoration: none;
-    color: black;
+    color: var(--color3);
     font-family: 'Source Sans Pro', sans-serif;
   }
   
   
   
   /* HEADER */
-  header{
-    background-color: var(--main-color);
-
-    position: fixed;
-    width: 100%;
-    
-    z-index:1 ;
-  }
+  
   
   details{
     color: var(--color2) ;

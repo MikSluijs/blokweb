@@ -8,6 +8,9 @@
   --main-color:#cfae40;
   --color2:#fff;
   --color3:#000;
+  --color4:#2d65ae;
+  --color5:#919191;
+  --color6:#1D1E4E;
   
 }
 
@@ -21,7 +24,7 @@ body{
 
 H1, h2, h3, p, time, nav{
   color: var(--color2);
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
 }
 
 a{
@@ -29,9 +32,24 @@ a{
   color: black;
 }
 
+*:focus{
+  color: var(--color6) !important;
+  border: double var(--color6) 6px;
+  outline: 0;
+
+  transition: 250ms;
+}
+*:focus * {
+  color: inherit !important;
+
+  transition: 250ms;
+}
 
 
-/* HEADER */
+/* HEADER */ 
+
+/* Alles op goede afstand en blijft plakken 
+aan de boven kant bij scrollen */
 header{
   position: fixed;
   width: 100%;
@@ -42,23 +60,40 @@ header{
 
 }
 
+#detail header{
+  position: fixed;
+  width: 100%;
+  
+  z-index:2 ;
+}
+
+ /* logo afstand van zoek img*/
 header h1{
   margin-right: auto;
 }
 
-.open{
-  transform: translateX(-197vw);
+ /* menu button */
+a, nav{
+  padding-top: .5em;
 }
 
-.open button:before {
-  transform: rotate(45deg);
-  top: 0;
+ /* afstand van button en scherm en zoek img*/
+nav button{
+  margin-right: 1em;
+  margin-left: 1em;
 }
 
-.open button:after {
-  transform: rotate(-45deg);
-  top: 0;
+/* zoek img */
+h1 img{
+  width: 2.5em;
+  margin:.25em;
 }
+
+/* logo img */
+header > a img{
+  width: 25px;
+}
+ 
 
 ul{
   position: absolute;
@@ -74,31 +109,59 @@ ul{
   
   line-height: 2em;
 
-  
-
   transition: 250ms;
-  
 }
 
+/* als ul .open krijgt komt menu in beeld */
 nav.open ul{
   right: 0;
-  
 }
 
 ul li:first-of-type, li:nth-of-type(2), li:nth-of-type(3){
   font-size: 20px;
-  padding-bottom: 1em;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
+ul li:nth-of-type(3){
+  margin-bottom: 1em;
+}
+
+nav li{
+  font-size: 18px;
+
+  padding-bottom: .5em;
+  margin-bottom: .5em;
+
+  
+}
+
+nav li a:hover{
+  color: var(--color2);
+  text-shadow: 2px 3px 0px var(--color4) ;
+
+  transition: 250ms;
+}
+
+/* styling hamburger menu button  */
 nav button, nav button::before, nav button::after{
   width: 25px;
   height: 4px;
   border: none;
   position: relative;
+
+  transition: 250ms;
 }
 
+nav button:active{ 
+  background-color: var(--color2);
+  border: none;
+}
+
+
+/* streepje boven de button */
 nav button::before{
-  content: '';
+  content: '';  /* ?? */
 
   background-color: var(--color2);
 
@@ -107,6 +170,7 @@ nav button::before{
   right: 0;
 }
 
+/* streepje onder de button */
 nav button::after{
   content: '';
 
@@ -118,51 +182,44 @@ nav button::after{
   
 }
 
-
-
-a, nav{
-  right: 2em;
-  padding-top: .5em;
-  
-}
-
-nav button{
-  margin-right: 1em;
-  margin-left: 1em;
-}
-
-h1 img{
-  width: 2.5em;
-  margin:.25em;
-}
-
-header > a img{
-  width: 25px;
-
-}
-
-/* SECTION EEN */
-section:first-of-type{
-  position: relative;
-  
-}
-
-section:first-of-type img {
+/* streepje boven button wordt kruisje bij .open */
+nav.open button:before {
+  transform: rotate(45deg);
   top: 0;
+}
+
+ /* streepje onder de button wordt kruisje bij .open */
+nav.open button:after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+/* middelste streepje verdwijnt bij kruisje */
+nav.open button{
+  background: transparent;
+}
+
+
+
+
+/*******INDEX PAGE*******/
+
+/*SECTION EEN*/
+
+/* het plaatje van de staat en de gele gloed eroverheen */
+section:first-of-type img {
   width:100%;
-  padding-bottom: 1em;
 
   z-index: -1;
 
   background: var(--main-color);
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
-
+/* zodat alles ten opzichte van de dichtsbijzijnde parent staat*/
 section:first-of-type div{
   position: absolute;
 
-  
 }
 
 section:first-of-type div:nth-of-type(2){
@@ -172,10 +229,13 @@ section:first-of-type div:nth-of-type(2){
   right: 6em;
   display: inline-block;
   
-  padding: .5em;
+  padding: .4em;
   text-align: center;
 
+  transform: rotate(-10deg);
+
 }
+
 
 section:first-of-type div:nth-of-type(2) >*{
   background-color: var(--color3);
@@ -183,17 +243,18 @@ section:first-of-type div:nth-of-type(2) >*{
   
 }
 
-section:first-of-type div:nth-of-type(2){
-  transform: rotate(-10deg);
+section:first-of-type div:nth-of-type(2) time{
+  padding: .3em;
 }
 
+/* ruimte h2 en time */
 section:first-of-type div:nth-of-type(2) h2{
-  margin-top: .25em;
+  margin-top: .3em;
 }
 
 
 
-/* FROM*/
+/* FROM */
 
 form{
   position: absolute;
@@ -215,24 +276,19 @@ form input, select {
   padding: .5em;
 
   border-bottom: solid  3px var(--color2);
+  margin-bottom: 1em;
   color: var(--color2);
-}
-
-
-form input:first-of-type{
-  margin-bottom: 1em;
   
+  font-size: 15px;
 }
 
-form select{
-  margin-bottom: 1em;
-}
 
-input::placeholder{
+form input::placeholder{
   color: var(--color2);
 }
 
 /*SECTION TWEE*/
+
 section:nth-of-type(2){
   position: relative;
   top: 19em;
@@ -243,24 +299,22 @@ section:nth-of-type(2){
 
 section:nth-of-type(2) article{
   margin: 0 0 1.5em 1em;
-  text-align: left;
 }
-
-
 
 section:nth-of-type(2) a{
   display: grid;
   grid-template-columns: 120px 1fr;
-  grid-column-start: 1;
-  margin-right: 1em;
-  
+
+  margin-right: .8em;
 }
+
 
 section:nth-of-type(2) time{
   text-transform: uppercase;
   font-weight: 900;
   font-size: 16px;
 
+  text-shadow: 2px 3px 0px var(--color5);
   
 }
 
@@ -269,20 +323,218 @@ section:nth-of-type(2) h2, h3{
 
 }
 
-section:nth-of-type(2) h2:hover{
+/*Een hover voor als het scherm geen mobiel scherm is*/
+section:nth-of-type(2) h2:hover, h3:hover{
   font-size: 30px;
 }
 
+section:nth-of-type(2) h2:active, h3:active{
+  font-size: 30px;
+}
+
+
 section:nth-of-type(2) h2{
-  font-size: 24px;
+  font-size: 26px;
 }
 
 section:nth-of-type(2) h3{
-  font-size: 14px;
+  font-size: 18px;
 }
 
 section:nth-of-type(2) p{
-  font-size: 14px;
+  font-size: 18px;
 }
 
 
+/*******DETAIL PAGE*******/
+
+/*BODY*/
+#detail{
+  display: flex;
+  flex-direction: column;
+
+  padding-bottom: 20em;
+
+  background-color: var(--color2);
+
+  z-index: -4;
+
+}
+
+#detail H1, #detail h2, #detail h3, #detail p, #detail time, #detail nav, #detail span, #detail a{
+  color: var(--color3);
+  font-family: 'Source Sans Pro',Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+/*SECTION EEN*/
+#detail section {
+  display: flex;
+ 
+  position: relative;
+  top: 5em;
+
+  line-height: 2em;
+  text-align: center;
+}
+
+#detail section:first-of-type div:first-of-type{
+  background-color: var(--color4);
+
+  position: absolute;
+  top: -111px;
+  width: 100%;
+  height: 13em;
+
+  transform: skewy(-10deg);
+  z-index: -1;
+}
+
+
+ #detail span, #detail time{
+  background-color: var(--color3);
+  color: var(--color2);
+
+  position: absolute;
+  left: .5em;
+  top: 1em;
+
+  padding-right: 2em;
+  padding-left: 2em;
+  
+
+  transform: skewY(-10deg);
+
+}
+
+#detail span{
+margin-top: 2em;
+
+padding-right: 3em;
+
+text-transform: uppercase;
+}
+
+
+#detail section:first-of-type img{
+ 
+  width: 90%;
+
+  background-color: var(--color2);
+  opacity: 1;
+
+  margin: 1em;
+  margin-top: 3em;
+}
+
+/*SECTION TWEE*/
+
+#detail section:nth-of-type(2){
+  display: flex;
+  align-self: center;
+
+  padding: .5em;
+  margin: .5em;
+  margin-bottom: 2em;
+
+  border: solid var(--color4) 5px;
+
+
+  transition: 250ms;
+
+}
+
+#detail section:nth-of-type(2) a{
+  font-size: 20px;
+
+  color: var(--color4);
+
+  padding: 0;
+  margin: 0;
+}
+
+#detail section:nth-of-type(2) a::after{
+  content: '';
+
+  position: absolute;
+  bottom: -30px;
+  left: 5%;
+  width: 90%;
+  height: 10px;
+
+  background-color: var(--color5);
+  border-radius: 50%;
+  filter: blur(5px);
+
+}
+
+#detail section:nth-of-type(2) a:hover{
+  color: var(--color2);
+  
+}
+
+
+#detail section:nth-of-type(2):hover{
+  padding: .8em ;
+
+  border-color: var(--main-color);
+  border-radius: 20px;
+
+  color: var(--main-color);
+  background-color: var(--main-color) ;
+
+  transition: 250ms;
+}
+
+#detail section:nth-of-type(2):active{
+  border-color: var(--color4);
+  border-radius: 20px;
+
+  background-color: var(--color4);
+
+  transition: 250ms;
+}
+
+/*ARTICLE EEN*/
+
+#detail article{
+  position: relative;
+  top: 6em;
+  left: 1em;
+  
+  margin-right: 1.5em;
+
+  display: flex;
+  flex-direction: column;
+   
+}
+
+#detail article h2{
+  padding-bottom: .2em;
+  
+  text-transform: uppercase;
+  font-size:28px;
+
+}
+
+#detail article h3{
+  text-transform: inherit;
+
+  margin-bottom: .2em;
+
+  font-size: 21px;
+}
+
+#detail article h3:hover{
+  font-size: 21px;
+
+}
+
+#detail article p{
+  font-size: 17px;
+  line-height: 1.4em;
+
+}
