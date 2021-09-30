@@ -72,7 +72,7 @@ https://www.013.nl/
 ## Voortgang 1 (week 2)
 
 <details>
-<summary>uitwerken voor 1e voortgang</summary>
+<summary>1e voortgang</summary>
 
 ### Stand van zaken
 Ik vond het beginnen eraan heel lastig omdat ik eigenlijk niet zo goed wist waar te beginnen, door de breakdown schetsen werd het wel wat makkelijker maar de html was helemaal weg gezakt dus dat was even lastig. Nu ben ik bezig met de css van pagina een en dat gaat ook niet makkelijk, het lukt vaak wel maar met hulp. Ik heb er een details en summary in gedaan maar ik weet niet hoe ik dit ga maken tot een hamburger menu... Daar wil ik aan beginnen zodra de rest er goed genoeg uit ziet. Ik hoop er dit weekend meer tijd aan te besteden zodat ik er sneller in wordt.
@@ -89,7 +89,7 @@ samen met je groepje opstellen
   
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
+
 
 - Ik ben geholpen met de positie van tekst op een afbeelding
 - Iedereen heeft een vraag kunnen stellen waardoor we even verder konden
@@ -103,10 +103,10 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ## Voortgang 2 (week 3)
 
 <details>
-<summary>uitwerken voor 2e voortgang</summary>
+<summary>2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik ben nog helemaal niet zeker van wat ik tot nu toe heb. Al helemaal als ik zie wat de mensen uit mijn groepje al hebben, ookal zaten die al op een hoger niveau, maak ik me best wel zorgen over mijn eigen site. Wel heb ik al heel veel fijne hulp gekregen van wat andere klasgenoten. Ik moet en wil nog heel veel aan mijn site doen maar bij een aantal dingen weet ik niet zo goed hoe. Ik hoop dit in de feedback sessies/ lessen te kunnen vragen.
 
 
 ### Agenda voor meeting
@@ -114,15 +114,14 @@ samen met je groepje opstellen
 
 | Mik     | Luna         | Reinier   | Lars        |
 | ---            | ---                | ---          | ---              |
-| Moet alles van de huiswerk opdrachten in de site?  | en dit             | en ik dit    | en dan ik dat    |
-| een vak schuin trekken met css? Moet dat dan met een div?| dit als er tijd is | nog een punt | dit wil ik zeker |
+| Moet alles van de huiswerk opdrachten in de site?  | responsive deel ging niet lekker | vooral verder werken   | niet aanwezig   |
+| een vak schuin trekken met css? Moet dat dan met een div?| |  | |
 | ...            | ...                | ...          | ...              |
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
 
--Zorg dat je alles wat voor jou relevant is van het huiswerk, verwerkt in je site. De vraag al opgelost door Reinier maar toen was het toch niet gelukt dus heb ik het de volgende les toch nog aan de docent gevraagd
+-Zorg dat je alles wat voor jou relevant is van het huiswerk, verwerkt in je site. De vraag was al opgelost door Reinier maar toen was het toch niet gelukt dus heb ik het de volgende les toch nog aan de docent gevraagd
 </details>
 
 
@@ -132,33 +131,36 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ## Toegankelijkheidstest (week 4)
 
 <details>
-<summary>uitwerken na test in 8e voortgang</summary>
+<summary> 8e voortgang</summary>
 
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### De zoekbalk en het hamburger menu eigenlijk vrij klein
+Bij het testen met de ballon opgooien kwamen we er achter dat het zoek tekentje en het icoontje van 
+het hamburger menu vrij klein zijn en je als je snel wordt afgeleid heel erg gefocust moet zijn om op
+zo'n kleine button te kunnen klikken.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Door deze bevinding heb ik in mijn eigen site deze twee elementen wat groter gemaakt zodat het minder moeite kost om er op de klikken.
 
 
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### De form input en de line heigt en font size is te klein
+Bij het testen met de bril die maar 1 klein puntje heeft waar je doorheen kijkt kwamen we erachter dat de placeholder en de select input een wat kleine tekst heeft. Ook is de line heigt en de font size van het grote stuk tekst op de detail pagina te klein is en het met deze beperking moeilijk leesbaar wordt.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Ik heb door deze bevindingen het lettertype van het form vergroot met 2px en de line heigt en font size in mijn site verhoogt. Wat ook een optie zou zijn is de optie geven aan de gebruiker om het lettertype te vergroten als het voor hen nodig is.
 
 
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### tekst in het logo is te klein
+Met het testen met de bril die een blur heeft was het duidelijk dat de tekst in het logo van 013 veel te klein is. Dit valt namelijk compleet weg met deze bril.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Als ik het logo zou kunnen aanpassen zou ik kijken of deze tekst dus kan vergroten en zo nodig op een andere plek zetten.
+
+#### Screen reader
+- Headings-> bij de headings klopt bijna alles wel. Bij de H2 zorgen dat niet alles in caps is zodat het door de screen reader normaal wordt voorgelezen.
+- Links-> Er zijn in de links een aantal afkortingen die ik door de screenreader als volledige woorden zou willen laten uitspreken als ik de tijd had. 
+Ook denk ik dat het beter is als bij de articles alleen de "datum, artiest" worden genoemd door de screen reader omdat dit alleen de meest belangrijke informatie is die je nodig hebt om te weten of je verder zou willen kijken.
+Ook waren in mijn menu nog niet alle opties een echt linkje waardoor deze ook niet werden voorgelezen door de screen reader, dit heb ik aangepast door alles een linkje naar de home pagina te geven zodat de screenreader deze ziet en voorleest, in de echte site zou dit natuurlijk naar de betrefende pagina gaan. 
+ 
 
 </details>
 
@@ -180,18 +182,15 @@ samen met je groepje opstellen
 
 | Mik            | Luna         | Reinier   | Lars       |
 | ---            | ---                | ---          | ---              |
-| door de focus komt nu bij het hamburgermenu een border, verpest de 'animatie' een beetje...  | en dit    |   | en dan ik dat    |
-|  | dit als er tijd is | nog een punt | dit wil ik zeker |
-|             | ...                | ...          | ...              |
+| door de focus komt nu bij het hamburgermenu een border, verpest de 'animatie' een beetje...  | geen vragen gewoon doorwerken   |   | svg animatie laten stoppen   |
+|  |  | | |
+|             |               |        |             |
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+
+- Dit was de laatste feedback sessie en we hebben allemaal de vragen kunnen stellen die we wilde stellen. Mijn vraag is ook opgelost maar nu zie je ook de :focus niet meer bij het de hamburger menu button, ik denk dat ik dit wel zo laat omdat je in het menu wel alle focus states ziet.
 
 </details>
 
