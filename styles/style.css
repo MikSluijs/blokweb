@@ -11,7 +11,8 @@
   --color4:#2d65ae;
   --color5:#919191;
   --color6:#1D1E4E;
-  
+  --color7: #d8232a;
+  --color8: #cf5357;
 }
 
 /* ALGEMEEN */
@@ -20,6 +21,9 @@ body{
   background-color: var(--main-color);
   z-index: -2;
   padding-bottom: 20em;
+
+  animation-name:verschijnen;
+  animation-duration:1s;
 }
 
 H1, h2, h3, p, time, nav{
@@ -40,7 +44,7 @@ a{
   transition: 250ms;
 }
 *:focus * {
-  color: inherit !important;
+  color: inherit;
 
   transition: 250ms;
 }
@@ -83,6 +87,19 @@ nav button{
   margin-left: 1em;
 }
 
+nav button:hover{
+  cursor: pointer;
+}
+
+nav button:active{ 
+  background-color: var(--color2);
+  border: none;
+}
+
+nav button:focus{
+  border: none;
+}
+
 /* zoek img */
 h1 img{
   width: 2.5em;
@@ -94,6 +111,7 @@ header > a img{
   width: 25px;
 }
  
+
 
 ul{
   position: absolute;
@@ -152,12 +170,6 @@ nav button, nav button::before, nav button::after{
 
   transition: 250ms;
 }
-
-nav button:active{ 
-  background-color: var(--color2);
-  border: none;
-}
-
 
 /* streepje boven de button */
 nav button::before{
@@ -282,6 +294,13 @@ form input, select {
   font-size: 15px;
 }
 
+form input:hover{
+  cursor: auto;
+}
+
+form select{
+  cursor: pointer;
+}
 
 form input::placeholder{
   color: var(--color2);
@@ -298,8 +317,11 @@ section:nth-of-type(2){
 }
 
 section:nth-of-type(2) article{
-  margin: 0 0 1.5em 1em;
+  margin: 0 1em 1.5em 1em;
+  padding-left: 5px;
 }
+
+
 
 section:nth-of-type(2) a{
   display: grid;
@@ -323,9 +345,11 @@ section:nth-of-type(2) h2, h3{
 
 }
 
-/*Een hover voor als het scherm geen mobiel scherm is*/
+
 section:nth-of-type(2) h2:hover, h3:hover{
-  font-size: 30px;
+  font-size: 28px;
+
+  cursor: pointer;
 }
 
 section:nth-of-type(2) h2:active, h3:active{
@@ -359,6 +383,9 @@ section:nth-of-type(2) p{
 
   z-index: -4;
 
+  animation-name:verschijnen;
+  animation-duration:1s;
+
 }
 
 #detail H1, #detail h2, #detail h3, #detail p, #detail time, #detail nav, #detail span, #detail a{
@@ -379,13 +406,14 @@ section:nth-of-type(2) p{
 
   line-height: 2em;
   text-align: center;
+
 }
 
 #detail section:first-of-type div:first-of-type{
   background-color: var(--color4);
 
-  position: absolute;
-  top: -111px;
+  position: fixed;
+  top: -53px;
   width: 100%;
   height: 13em;
 
@@ -436,12 +464,12 @@ text-transform: uppercase;
   display: flex;
   align-self: center;
 
-  padding: .5em;
   margin: .5em;
   margin-bottom: 2em;
 
-  border: solid var(--color4) 5px;
-
+  box-shadow: 
+    0.3em 0.3em 0 0 var(--color8),
+    inset 0.3em 0.3em 0 0 var(--color8);
 
   transition: 250ms;
 
@@ -450,9 +478,9 @@ text-transform: uppercase;
 #detail section:nth-of-type(2) a{
   font-size: 20px;
 
-  color: var(--color4);
+  color: var(--color8);
 
-  padding: 0;
+  padding: 7px;
   margin: 0;
 }
 
@@ -472,28 +500,30 @@ text-transform: uppercase;
 }
 
 #detail section:nth-of-type(2) a:hover{
+  cursor: pointer;
+
   color: var(--color2);
-  
 }
 
 
 #detail section:nth-of-type(2):hover{
   padding: .8em ;
 
-  border-color: var(--main-color);
-  border-radius: 20px;
+  cursor: pointer;
+  color: var(--color2);
 
-  color: var(--main-color);
-  background-color: var(--main-color) ;
+  box-shadow: 
+      0 0 0 0 var(--color7),
+      inset 0 4.5em 0 0 var(--color7);
 
   transition: 250ms;
 }
 
 #detail section:nth-of-type(2):active{
-  border-color: var(--color4);
+  
   border-radius: 20px;
 
-  background-color: var(--color4);
+  background-color: var(--color7);
 
   transition: 250ms;
 }
@@ -509,6 +539,8 @@ text-transform: uppercase;
 
   display: flex;
   flex-direction: column;
+
+  
    
 }
 
@@ -531,10 +563,25 @@ text-transform: uppercase;
 #detail article h3:hover{
   font-size: 21px;
 
+  cursor: pointer;
 }
 
 #detail article p{
   font-size: 17px;
   line-height: 1.4em;
 
+}
+
+
+/*** ANNIMATIES ***/
+
+@keyframes verschijnen {
+  0% {
+    
+    opacity: 0;
+  }
+  100% {
+    
+    opacity: 1;
+  }
 }
