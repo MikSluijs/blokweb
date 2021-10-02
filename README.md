@@ -236,9 +236,9 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 9. https://css-tricks.com/snippets/css/complete-guide-grid/
 10. https://css-tricks.com/snippets/css/text-rotation/
 11. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-12.
-13. 
-14. 
+12. https://www.w3schools.com/cssref/pr_border-bottom.asp
+13. https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/
+ 
 
 
  
