@@ -203,7 +203,7 @@ samen met je groepje opstellen
 ## Eindgesprek (week 5)
 
 <details>
-<summary>uitwerken voor eindgesprek</summary>
+
 
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
@@ -225,8 +225,23 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. https://codepen.io/miksluijs/pen/OJgqpNb?editors=1100
+2. https://www.013.nl/programma/hiphop 
+3. https://www.013.nl/
+4. https://www.013.nl/programma/6051/doe-maar
+5. https://try2explore.com/questions/10020764
+6. https://www.youtube.com/watch?v=zuQUlAv45EE 
+7. student assistenten, de docent, mede studenten en DLO
+8. https://www.youtube.com/watch?v=2QfJQ66b1Os&t=2s
+9. https://css-tricks.com/snippets/css/complete-guide-grid/
+10. https://css-tricks.com/snippets/css/text-rotation/
+11. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+12.
+13. 
+14. 
+
+
+ 
+
 
 </details>
