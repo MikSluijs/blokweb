@@ -1,8 +1,4 @@
-# Procesverslag
-Markdown is een simpele manier om HTML te schrijven.  
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-
-Nb. De standaardstructuur en de spartaanse opmaak van de README.md zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
+## Proces verslag FED Mik Sluijs
 
 Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard open zetten. Fijn om dat steeds voor de relevante stuk(ken) te doen.
 
@@ -13,7 +9,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Jij
 
 <details open>
-<summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Auteur:
 Mik Sluijs
@@ -33,9 +28,8 @@ surface plain
 ## Je website
 
 <details open>
-<summary>uitwerken voor kick-off werkgroep</summary>
 
-### Je opdracht:
+### Mijn opdracht:
 https://www.013.nl/
 
 #### Screenshot van de eerste pagina (small screen): 
@@ -57,7 +51,7 @@ https://www.013.nl/
 ## Breakdownschets (week 1)
 
 <details>
-<summary>uitwerken na afloop 2e werkgroep</summary>
+ <summary> Mijn breakdownschets </summary>
 
 ### de hele pagina: 
 <img src="images/bd-1.png" width="375px" alt="breakdown van de eerste pagina">
@@ -131,7 +125,7 @@ samen met je groepje opstellen
 ## Toegankelijkheidstest (week 4)
 
 <details>
-<summary> Toegankelijkheid test uitkomsten v</summary>
+<summary> Toegankelijkheid test uitkomsten </summary>
 
 ### Bevindingen
 Lijst met mijn bevindingen die in de test naar voren kwamen:
@@ -173,10 +167,10 @@ Ook waren in mijn menu nog niet alle opties een echt linkje waardoor deze ook ni
 ## Voortgang 3 (week 4)
 
 <details>
-<summary>uitwerken voor 3e voortgang</summary>
+<summary>3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik ben redelijk goed op weg, ik heb heel veel vooruitgang gemaakt ten opzichten van vorige week: ik heb pagina 2 bijna af en pagina 1 zo goed als af. Ik wil nog een heleboel toevoegen en daar ben ik ook al mee bezig. Ik heb eigenlijk maar een echte vraag, voor de rest wil ik gewoon door werken. 
 
 
 ### Agenda voor meeting
@@ -202,15 +196,37 @@ samen met je groepje opstellen
 
 ## Eindgesprek (week 5)
 
-<details>
+<details open>
 
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik denk dat ik in de korte tijd die we hadden voor dit vak en de hoeveelheid skills ik heb op dit vakgebied, iets best oke heb neer gezet. Ik heb heel veel moeite gehad, vooral in het begin, waar begin je? Wat moet waar? En vooral hoe ga ik dit ooit voor elkaar krijgen...? Ik heb veel steun gehad aan mijn mede studenten en de student assistenten heb ik ook vaak om hulp gevraagd, vaak was het een hele makkelijke oplossing maar kon ik er zelf gewoon niet op komen. Dit maakte mij vaak onzeker omdat ik het graag zelf wilde kunnen maar dat ging gewoon echt niet makkelijk. Uiteindelijk heb ik wel heel veel nieuwe dingen gedaan en geleerd, onderandere deze dingen:
+ 
+#### Hier heb ik samen met Ine het hamburger menu laten veranderen naar een kruisje als het open gaat, ik had nooit gedacht dat dit echt ging lukken, maar met een heleboel uitleg is het echt gelukt!
+ 
 
-### Screenshot(s)
+<img src="images/eind-1.png" width="375px" alt="het kruisje van het hamburger menu">
+ 
+ #### Ik heb heel lang in het begin moeite gehad met hoe ik nou precies, net als bij de originele site is gedaan, die gloed over het plaatje te krijgen. Maar toch is het gelukt:)
+ 
+<img src="images/eind-2.png" width="375px" alt="oranje gloed over een plaatje">
+ 
+ #### Ik vond de ticket button op de originele site niet zo super bijzonder dus ik heb met behulp van heel wat googlen een nieuwe button en hover state gemaakt.
+ 
+<img src="images/eind-3.png" width="375px" alt="button normal state">
+<img src="images/eind-4.png" width="375px" alt="button hover state">
+ 
+ #### Deze schuine div was niet zo heel moeilijk maar het was voor mij even puzzelen waar de div in de Html moest staan en wat de beste manier was om het schuin te trekken.
+ 
+<img src="images/eind-5.png" width="375px" alt="schuine div als achtergrond">
+ 
 
-hier screenshot(s) van je eindresultaat
+ 
+### Screenshot(s) 
+ (de verhoudingen komen niet mooi uit op de screenshots)
+
+<img src="images/home-final.png" width="375px" alt="de uiteindelijke home pagina">
+<img src="images/detail-final.png" width="375px" alt="de uiteindelijke detail pagina">
 
 </details>
 
@@ -221,9 +237,7 @@ hier screenshot(s) van je eindresultaat
 ## Bronnenlijst
 
 <details open>
-<summary>continu bijhouden terwijl je werkt</summary>
-
-Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
+<summary>Mijn bronnenlijst</summary>
 
 1. https://codepen.io/miksluijs/pen/OJgqpNb?editors=1100
 2. https://www.013.nl/programma/hiphop 
