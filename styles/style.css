@@ -22,14 +22,16 @@ body{
   z-index: -2;
   padding-bottom: 20em;
 
-  animation-name:verschijnen;
+  animation-name:verschijnen; /* Alles langzamer in beeld */
   animation-duration:1s;
 }
+
 
 H1, h2, h3, p, time, nav{
   color: var(--color2);
   font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
 }
+
 
 a{
   text-decoration: none;
@@ -38,16 +40,20 @@ a{
 
 *:focus{
   color: var(--color6) !important;
+
   border: double var(--color6) 6px;
   outline: 0;
 
   transition: 250ms;
 }
+
+
 *:focus * {
   color: inherit;
 
   transition: 250ms;
 }
+
 
 *:active *{
   border: none;
@@ -62,28 +68,21 @@ header{
   position: fixed;
   width: 100%;
   z-index: 1;
-
   display: flex;
-  justify-content: space-between;
-
 }
 
-#detail header{
-  position: fixed;
-  width: 100%;
-  
-  z-index:2 ;
-}
 
  /* logo afstand van zoek img*/
 header h1{
   margin-right: auto;
 }
 
+
  /* menu button */
-a, nav{
+header a, header nav{
   padding-top: .5em;
 }
+
 
  /* afstand van button en scherm en zoek img*/
 nav button{
@@ -91,24 +90,30 @@ nav button{
   margin-left: 1em;
 }
 
+
 nav button:hover{
   cursor: pointer;
 }
+
 
 nav button:active{ 
   background-color: var(--color2);
   border: none;
 }
 
+
 nav button:focus{
   border: none;
 }
 
+
 /* zoek img */
 h1 img{
   width: 2.5em;
+
   margin:.25em;
 }
+
 
 /* logo img */
 header > a img{
@@ -116,38 +121,28 @@ header > a img{
 }
  
 
-
 ul{
   position: absolute;
   top:7vh;
   right: -400px;
+  padding: 3em 3em 14em 3em;
+
   color: var(--color3);
   text-align: left;
-  background-color: var(--color2);
-
   list-style: none;
-
-  padding: 3em 3em 14em 3em;
-  
   line-height: 2em;
+
+  background-color: var(--color2);
 
   transition: 250ms;
 }
+
 
 /* als ul .open krijgt komt menu in beeld */
 nav.open ul{
   right: 0;
 }
 
-ul li:first-of-type, li:nth-of-type(2), li:nth-of-type(3){
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: 900;
-}
-
-ul li:nth-of-type(3){
-  margin-bottom: 1em;
-}
 
 nav li{
   font-size: 18px;
@@ -161,19 +156,37 @@ nav li{
 nav li a:hover{
   color: var(--color2);
   text-shadow: 2px 3px 0px var(--color4) ;
-
-  transition: 250ms;
 }
+
+
+ul li:first-of-type, li:nth-of-type(2), li:nth-of-type(3){
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+
+ul li:nth-of-type(3){
+  margin-bottom: 1em;
+}
+
 
 /* styling hamburger menu button  */
 nav button, nav button::before, nav button::after{
+  position: relative;
   width: 25px;
   height: 4px;
+
   border: none;
-  position: relative;
 
   transition: 250ms;
 }
+
+
+nav button:hover, nav button:hover::before, nav button:hover::after{
+  background-color: var(--color6);
+}
+
 
 /* streepje boven de button */
 nav button::before{
@@ -185,6 +198,7 @@ nav button::before{
   top: -7px;
   right: 0;
 }
+
 
 /* streepje onder de button */
 nav button::after{
@@ -204,11 +218,13 @@ nav.open button:before {
   top: 0;
 }
 
+
  /* streepje onder de button wordt kruisje bij .open */
 nav.open button:after {
   transform: rotate(-45deg);
   top: 0;
 }
+
 
 /* middelste streepje verdwijnt bij kruisje */
 nav.open button{
@@ -220,7 +236,45 @@ nav.open button{
 
 /*******INDEX PAGE*******/
 
-/*SECTION EEN*/
+/* SECTION EEN */
+
+section:first-of-type div:nth-of-type(2) >*{
+  color: var(--color2);
+  background-color: var(--color3);
+  padding: .2em;
+  
+  transition: 250ms;
+}
+
+section:first-of-type div:nth-of-type(2) >*:hover{
+  background-color: var(--color2);
+  color: var(--color3);
+
+  cursor: pointer;
+}
+
+
+/* zodat alles ten opzichte van de dichtsbijzijnde parent staat*/
+section:first-of-type div{
+  position: absolute;
+
+  transition: 250ms;
+}
+
+
+section:first-of-type div:nth-of-type(2){
+  position: absolute;
+  top: 5em;
+  left: 6em;
+  right: 6em;
+
+  display: inline-block;
+  padding: .4em;
+  text-align: center;
+
+  transform: rotate(-10deg);
+}
+
 
 /* het plaatje van de staat en de gele gloed eroverheen */
 section:first-of-type img {
@@ -232,32 +286,6 @@ section:first-of-type img {
   opacity: 0.6;
 }
 
-/* zodat alles ten opzichte van de dichtsbijzijnde parent staat*/
-section:first-of-type div{
-  position: absolute;
-
-}
-
-section:first-of-type div:nth-of-type(2){
-  position: absolute;
-  top: 5em;
-  left: 6em;
-  right: 6em;
-  display: inline-block;
-  
-  padding: .4em;
-  text-align: center;
-
-  transform: rotate(-10deg);
-
-}
-
-
-section:first-of-type div:nth-of-type(2) >*{
-  background-color: var(--color3);
-  padding: .2em;
-  
-}
 
 section:first-of-type div:nth-of-type(2) time{
   padding: .3em;
@@ -270,7 +298,7 @@ section:first-of-type div:nth-of-type(2) h2{
 
 
 
-/* FROM */
+/* FORM */
 
 form{
   position: absolute;
@@ -281,36 +309,40 @@ form{
   margin-bottom: 1em;
   
   display: flex;
-  flex-direction: column;
-
-  
+  flex-direction: column;  
 }
 
 form input, select {
   background-color: var(--main-color);
-  border: none;
-  padding: .5em;
-
-  border-bottom: solid  3px var(--color2);
-  margin-bottom: 1em;
-  color: var(--color2);
   
+  padding: .5em;
+  margin-bottom: 1em;
+
+  border: none;
+  border-bottom: solid  3px var(--color2);
+  
+  color: var(--color2);
   font-size: 15px;
 }
+
 
 form input:hover{
   cursor: auto;
 }
 
+
 form select{
   cursor: pointer;
 }
+
 
 form input::placeholder{
   color: var(--color2);
 }
 
+
 /*SECTION TWEE*/
+
 
 section:nth-of-type(2){
   position: relative;
@@ -320,21 +352,23 @@ section:nth-of-type(2){
   grid-template-rows: repeat(3, 1fr);
 }
 
+
 section:nth-of-type(2):hover{
   cursor: pointer;
 }
+
+
 section:nth-of-type(2) article{
   margin: 0 1em 1.5em 1em;
   padding-left: 5px;
 }
 
 
-
+/* Zodat de time en de rest naast elkaar komt te 
+staan in elk article */
 section:nth-of-type(2) a{
   display: grid;
   grid-template-columns: 120px 1fr;
-
-  margin-right: .8em;
 }
 
 
@@ -348,53 +382,62 @@ section:nth-of-type(2) time{
   transition: 250ms;
 }
 
+
 section:nth-of-type(2) time:hover{
   font-size: 18px;
 }
+
 
 section:nth-of-type(2) h2, h3{
   text-transform: uppercase;
   transition: 250ms;
 }
 
+
 section:nth-of-type(2) h2:active, h3:active{
   font-size: 30px;
 }
+
 
 section:nth-of-type(2) h2{
   font-size: 26px;
 }
 
+
 section:nth-of-type(2) h2:hover{
   font-size: 30px;
 }
 
+
 section:nth-of-type(2) h3{
   font-size: 18px;
 }
+
 
 section:nth-of-type(2) p{
   font-size: 18px;
 }
 
 
+
 /*******DETAIL PAGE*******/
 
 /*BODY*/
+
+
 #detail{
   display: flex;
   flex-direction: column;
-
-  padding-bottom: 20em;
 
   background-color: var(--color2);
 
   z-index: -4;
 
-  animation-name:verschijnen;
+  animation-name:verschijnen; /* Alles langzamer in beeld */
   animation-duration:1s;
 
 }
+
 
 #detail H1, #detail h2, #detail h3, #detail p, #detail time, #detail nav, #detail span, #detail a{
   color: var(--color3);
@@ -402,21 +445,18 @@ section:nth-of-type(2) p{
 }
 
 
-
-
-
 /*SECTION EEN*/
+
+
 #detail section {
-  display: flex;
- 
   position: relative;
   top: 5em;
 
   line-height: 2em;
   text-align: center;
-
 }
 
+/* Div blauw en schuintrekken */
 #detail section:first-of-type div:first-of-type{
   background-color: var(--color4);
 
@@ -425,19 +465,18 @@ section:nth-of-type(2) p{
   width: 100%;
   height: 13em;
 
-  transform: skewy(-10deg);
+  transform: skewY(-10deg);
   z-index: -1;
 }
 
 
- #detail span, #detail time{
+#detail span, #detail time{
   background-color: var(--color3);
   color: var(--color2);
 
   position: absolute;
   left: .5em;
   top: 1em;
-
   padding-right: 2em;
   padding-left: 2em;
   
@@ -446,28 +485,27 @@ section:nth-of-type(2) p{
 
 }
 
+
 #detail span{
-margin-top: 2em;
+  margin-top: 2em;
+  padding-right: 3em;
 
-padding-right: 3em;
-
-text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 
 #detail section:first-of-type img{
- 
   width: 90%;
-
-  background-color: var(--color2);
-  opacity: 1;
-
   margin: 1em;
   margin-top: 3em;
+
+  opacity: 1;
 }
 
 /*SECTION TWEE*/
 
+
+/* tickets button styles */
 #detail section:nth-of-type(2){
   display: flex;
   align-self: center;
@@ -480,9 +518,34 @@ text-transform: uppercase;
     inset 0.3em 0.3em 0 0 var(--color8);
 
   transition: 250ms;
-
 }
 
+/* solid ticket button bij hover */
+#detail section:nth-of-type(2):hover{
+  padding: .5em ;
+
+  cursor: pointer;
+  color: var(--color2);
+
+  box-shadow: 
+      0 0 0 0 var(--color7),
+      inset 0 4.5em 0 0 var(--color7);
+
+  transition: 250ms;
+}
+
+
+/* styling  ticket button:active */
+#detail section:nth-of-type(2):active{
+  border-radius: 20px;
+
+  background-color: var(--color7);
+
+  transition: 250ms;
+}
+
+
+/* styling tekst ticket button */
 #detail section:nth-of-type(2) a{
   font-size: 20px;
 
@@ -492,6 +555,16 @@ text-transform: uppercase;
   margin: 0;
 }
 
+
+/* styling tekst ticket button:hover */
+#detail section:nth-of-type(2) a:hover{
+  cursor: pointer;
+
+  color: var(--color2);
+}
+
+
+/* styling schaduw onder button*/
 #detail section:nth-of-type(2) a::after{
   content: '';
 
@@ -507,50 +580,18 @@ text-transform: uppercase;
 
 }
 
-#detail section:nth-of-type(2) a:hover{
-  cursor: pointer;
 
-  color: var(--color2);
-}
+/* ARTICLE EEN */
 
-
-#detail section:nth-of-type(2):hover{
-  padding: .8em ;
-
-  cursor: pointer;
-  color: var(--color2);
-
-  box-shadow: 
-      0 0 0 0 var(--color7),
-      inset 0 4.5em 0 0 var(--color7);
-
-  transition: 250ms;
-}
-
-#detail section:nth-of-type(2):active{
-  
-  border-radius: 20px;
-
-  background-color: var(--color7);
-
-  transition: 250ms;
-}
-
-/*ARTICLE EEN*/
 
 #detail article{
   position: relative;
   top: 6em;
   left: 1em;
   
-  margin-right: 1.5em;
-
-  display: flex;
-  flex-direction: column;
-
-  
-   
+  margin-right: 1.5em; 
 }
+
 
 #detail article h2{
   padding-bottom: .2em;
@@ -560,6 +601,7 @@ text-transform: uppercase;
 
 }
 
+
 #detail article h3{
   text-transform: inherit;
 
@@ -568,11 +610,13 @@ text-transform: uppercase;
   font-size: 21px;
 }
 
+
 #detail article h3:hover{
   font-size: 21px;
 
   cursor: pointer;
 }
+
 
 #detail article p{
   font-size: 17px;
@@ -581,7 +625,7 @@ text-transform: uppercase;
 }
 
 
-/*** ANNIMATIES ***/
+/*** ANNIMATIE ***/
 
 @keyframes verschijnen {
   0% {
@@ -593,3 +637,4 @@ text-transform: uppercase;
     opacity: 1;
   }
 }
+
