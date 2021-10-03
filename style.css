@@ -1,0 +1,645 @@
+/* CSS Document */
+*, *::after, *::before {
+  box-sizing:border-box;  
+  margin: 0;
+}
+
+:root{
+  --main-color:#cfae40;
+  --color2:#fff;
+  --color3:#000;
+  --color4:#2d65ae;
+  --color5:#919191;
+  --color6:#1D1E4E;
+  --color7: #d8232a;
+  --color8: #cf5357;
+}
+
+/* ALGEMEEN */
+
+body{
+  background-color: var(--main-color);
+  z-index: -2;
+  padding-bottom: 20em;
+
+  animation-name:verschijnen; /* Alles langzamer in beeld */
+  animation-duration:1s;
+}
+
+
+H1, h2, h3, p, time, nav{
+  color: var(--color2);
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+}
+
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+*:focus{
+  color: var(--color6) !important;
+
+  border: double var(--color6) 6px;
+  outline: 0;
+
+  transition: 250ms;
+}
+
+
+*:active *{
+  border: none;
+}
+
+*::selection{
+  background-color: var(--main-color);
+}
+
+/* HEADER */ 
+
+/* Alles op goede afstand en blijft plakken 
+aan de boven kant bij scrollen */
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+}
+
+
+ /* logo afstand van zoek img*/
+header h1{
+  margin-right: auto;
+}
+
+
+ /* menu button */
+header a, header nav{
+  padding-top: .5em;
+}
+
+
+ /* afstand van button en scherm en zoek img*/
+nav button{
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+
+nav button:hover{
+  cursor: pointer;
+}
+
+
+nav button:active{ 
+  background-color: var(--color2);
+  border: none;
+}
+
+
+nav button:focus{
+  border: none;
+}
+
+
+/* zoek img */
+h1 img{
+  width: 2.5em;
+
+  margin:.25em;
+}
+
+
+/* logo img */
+header > a img{
+  width: 25px;
+}
+ 
+
+/* het uitgeklapte menu */
+ul{
+  position: absolute;
+  top:7vh;
+  right: -400px;
+  padding: 3em 3em 14em 3em;
+
+  color: var(--color3);
+  text-align: left;
+  list-style: none;
+  line-height: 2em;
+
+  background-color: var(--color2);
+
+  transition: 250ms;
+}
+
+
+/* als ul .open krijgt komt menu in beeld */
+nav.open ul{
+  right: 0;
+}
+
+
+nav li{
+  font-size: 18px;
+
+  padding-bottom: .5em;
+  margin-bottom: .5em;
+
+  
+}
+
+nav li a:hover{
+  color: var(--color2);
+  text-shadow: 2px 3px 0px var(--color4) ;
+}
+
+
+ul li:first-of-type, li:nth-of-type(2), li:nth-of-type(3){
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+
+ul li:nth-of-type(3){
+  margin-bottom: 1em;
+}
+
+
+/* styling hamburger menu button  */
+nav button, nav button::before, nav button::after{
+  position: relative;
+  width: 25px;
+  height: 4px;
+
+  border: none;
+
+  transition: 250ms;
+}
+
+
+nav button:hover, nav button:hover::before, nav button:hover::after{
+  background-color: var(--color6);
+}
+
+
+/* streepje boven de button */
+nav button::before /* before + after is extra content aan een 
+bestaand element toevoegen, first/last child van de parent*/{
+  content: '';  /* ?? */
+
+  background-color: var(--color2);
+
+  position: absolute;
+  top: -7px;
+  right: 0;
+}
+
+
+/* streepje onder de button */
+nav button::after{
+  content: '';
+
+  background-color: var(--color2);
+
+  position: absolute;
+  top: 7px;
+  right: 0;
+  
+}
+
+/* streepje boven button wordt kruisje bij .open */
+nav.open button:before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+
+ /* streepje onder de button wordt kruisje bij .open */
+nav.open button:after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+
+/* middelste streepje verdwijnt bij kruisje */
+nav.open button{
+  background: transparent;
+}
+
+
+
+
+/*******INDEX PAGE*******/
+
+/* SECTION EEN */
+
+
+/* zodat alles ten opzichte van de dichtsbijzijnde parent staat*/
+section:first-of-type div{
+  position: absolute;
+
+  transition: 250ms;
+}
+
+
+/* het plaatje van de staat en de gele gloed eroverheen */
+section:first-of-type img {
+  width:100%;
+
+  z-index: -1;
+
+  background: var(--main-color);
+  opacity: 0.6;
+}
+
+
+/* de banner tekst */
+section:first-of-type div:nth-of-type(2){
+  position: absolute;
+  top: 5em;
+  left: 6em;
+  right: 6em;
+
+  display: inline-block;
+  padding: .4em;
+  text-align: center;
+
+  transform: rotate(-10deg);
+}
+
+
+section:first-of-type div:nth-of-type(2) >*{
+  color: var(--color2);
+  background-color: var(--color3);
+  padding: .2em;
+  
+  transition: 250ms;
+}
+
+
+section:first-of-type div:nth-of-type(2) >*:hover{
+  background-color: var(--color2);
+  color: var(--color3);
+
+  cursor: pointer;
+}
+
+
+section:first-of-type div:nth-of-type(2) time{
+  padding: .3em;
+}
+
+
+/* ruimte h2 en time */
+section:first-of-type div:nth-of-type(2) h2{
+  margin-top: .3em;
+}
+
+
+/* FORM */
+
+
+/*styling hele form*/
+form{
+  position: absolute;
+  top: 12em;
+  left: 1em;
+  right: 1em;
+  
+  margin-bottom: 1em;
+  
+  display: flex;
+  flex-direction: column;  
+}
+
+
+form input, select {
+  background-color: var(--main-color);
+  
+  padding: .5em;
+  margin-bottom: 1em;
+
+  border: none;
+  border-bottom: solid  3px var(--color2);
+  
+  color: var(--color2);
+  font-size: 15px;
+}
+
+
+form select{
+  cursor: pointer;
+}
+
+
+form input:hover{
+  cursor: auto;
+}
+
+
+form input::placeholder{
+  color: var(--color2);
+}
+
+
+/*SECTION TWEE*/
+
+
+/* styling data en artiesten */
+section:nth-of-type(2){
+  position: relative;
+  top: 19em;
+
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+
+section:nth-of-type(2):hover{
+  cursor: pointer;
+}
+
+
+section:nth-of-type(2) article{
+  margin: 0 1em 1.5em 1em;
+  padding-left: 5px;
+}
+
+
+/* Zodat de time en de rest naast elkaar komt te 
+staan in elk article */
+section:nth-of-type(2) a{
+  display: grid;
+  grid-template-columns: 120px 1fr;
+}
+
+
+section:nth-of-type(2) time{
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 16px;
+
+  text-shadow: 2px 3px 0px var(--color5); 
+
+  transition: 250ms;
+}
+
+
+section:nth-of-type(2) time:hover{
+  font-size: 18px;
+}
+
+
+section:nth-of-type(2) h2, h3{
+  text-transform: uppercase;
+  transition: 250ms;
+}
+
+
+section:nth-of-type(2) h2:active, h3:active{
+  font-size: 30px;
+}
+
+
+section:nth-of-type(2) h2{
+  font-size: 26px;
+}
+
+
+section:nth-of-type(2) h2:hover{
+  font-size: 30px;
+}
+
+
+section:nth-of-type(2) h3{
+  font-size: 18px;
+}
+
+
+section:nth-of-type(2) p{
+  font-size: 18px;
+}
+
+
+
+/*******DETAIL PAGE*******/
+
+/*BODY*/
+
+
+#detail{
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--color2);
+
+  z-index: -4;
+
+  animation-name:verschijnen; /* Alles langzamer in beeld */
+  animation-duration:1s;
+
+}
+
+
+#detail H1, #detail h2, #detail h3, #detail p, #detail time, #detail nav, #detail span, #detail a{
+  color: var(--color3);
+  font-family: 'Source Sans Pro',Arial, Helvetica, sans-serif;
+}
+
+
+/*SECTION EEN*/
+
+
+#detail section {
+  position: relative;
+  top: 5em;
+
+  line-height: 2em;
+  text-align: center;
+}
+
+/* Div blauw en schuintrekken */
+#detail section:first-of-type div:first-of-type{
+  background-color: var(--color4);
+
+  position: fixed;
+  top: -53px;
+  width: 100%;
+  height: 13em;
+
+  transform: skewY(-10deg);
+  z-index: -1;
+}
+
+
+#detail span, #detail time{
+  background-color: var(--color3);
+  color: var(--color2);
+
+  position: absolute;
+  left: .5em;
+  top: 1em;
+  padding-right: 2em;
+  padding-left: 2em;
+  
+
+  transform: skewY(-10deg);
+
+}
+
+
+#detail span{
+  margin-top: 2em;
+  padding-right: 3em;
+
+  text-transform: uppercase;
+}
+
+
+#detail section:first-of-type img{
+  width: 90%;
+  margin: 1em;
+  margin-top: 3em;
+
+  opacity: 1;
+}
+
+/*SECTION TWEE*/
+
+
+/* tickets button styles */
+#detail section:nth-of-type(2){
+  display: flex;
+  align-self: center;
+
+  margin: .5em;
+  margin-bottom: 2em;
+
+  box-shadow: 
+    0.3em 0.3em 0 0 var(--color8),
+    inset 0.3em 0.3em 0 0 var(--color8);
+
+  transition: 250ms;
+}
+
+/* solid ticket button bij hover */
+#detail section:nth-of-type(2):hover{
+  padding: .5em ;
+
+  cursor: pointer;
+  color: var(--color2);
+
+  box-shadow: 
+      0 0 0 0 var(--color7),
+      inset 0 4.5em 0 0 var(--color7);
+
+  transition: 250ms;
+}
+
+
+/* styling  ticket button:active */
+#detail section:nth-of-type(2):active{
+  border-radius: 20px;
+
+  background-color: var(--color7);
+
+  transition: 250ms;
+}
+
+
+/* styling tekst ticket button */
+#detail section:nth-of-type(2) a{
+  font-size: 20px;
+
+  color: var(--color8);
+
+  padding: 7px;
+  margin: 0;
+}
+
+
+/* styling tekst ticket button:hover */
+#detail section:nth-of-type(2) a:hover{
+  cursor: pointer;
+
+  color: var(--color2);
+}
+
+
+/* styling schaduw onder button*/
+#detail section:nth-of-type(2) a::after{
+  content: '';
+
+  position: absolute;
+  bottom: -30px;
+  left: 5%;
+  width: 90%;
+  height: 10px;
+
+  background-color: var(--color5);
+  border-radius: 50%;
+  filter: blur(5px);
+
+}
+
+
+/* ARTICLE EEN */
+
+
+#detail article{
+  position: relative;
+  top: 6em;
+  left: 1em;
+  
+  margin-right: 1.5em; 
+}
+
+
+#detail article h2{
+  padding-bottom: .2em;
+  
+  text-transform: uppercase;
+  font-size:28px;
+
+}
+
+
+#detail article h3{
+  text-transform: inherit;
+
+  margin-bottom: 1.5em;
+
+  font-size: 21px;
+}
+
+
+#detail article h3:hover{
+  font-size: 21px;
+
+  cursor: pointer;
+}
+
+
+#detail article p{
+  font-size: 17px;
+  line-height: 1.4em;
+
+}
+
+
+/*** ANNIMATIE ***/
+
+@keyframes verschijnen {
+  0% {
+    
+    opacity: 0;
+  }
+  100% {
+    
+    opacity: 1;
+  }
+}
+
