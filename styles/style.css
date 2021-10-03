@@ -48,13 +48,6 @@ a{
 }
 
 
-*:focus * {
-  color: inherit;
-
-  transition: 250ms;
-}
-
-
 *:active *{
   border: none;
 }
@@ -121,6 +114,7 @@ header > a img{
 }
  
 
+/* het uitgeklapte menu */
 ul{
   position: absolute;
   top:7vh;
@@ -189,7 +183,8 @@ nav button:hover, nav button:hover::before, nav button:hover::after{
 
 
 /* streepje boven de button */
-nav button::before{
+nav button::before /* before + after is extra content aan een 
+bestaand element toevoegen, first/last child van de parent*/{
   content: '';  /* ?? */
 
   background-color: var(--color2);
@@ -238,41 +233,12 @@ nav.open button{
 
 /* SECTION EEN */
 
-section:first-of-type div:nth-of-type(2) >*{
-  color: var(--color2);
-  background-color: var(--color3);
-  padding: .2em;
-  
-  transition: 250ms;
-}
-
-section:first-of-type div:nth-of-type(2) >*:hover{
-  background-color: var(--color2);
-  color: var(--color3);
-
-  cursor: pointer;
-}
-
 
 /* zodat alles ten opzichte van de dichtsbijzijnde parent staat*/
 section:first-of-type div{
   position: absolute;
 
   transition: 250ms;
-}
-
-
-section:first-of-type div:nth-of-type(2){
-  position: absolute;
-  top: 5em;
-  left: 6em;
-  right: 6em;
-
-  display: inline-block;
-  padding: .4em;
-  text-align: center;
-
-  transform: rotate(-10deg);
 }
 
 
@@ -287,9 +253,42 @@ section:first-of-type img {
 }
 
 
+/* de banner tekst */
+section:first-of-type div:nth-of-type(2){
+  position: absolute;
+  top: 5em;
+  left: 6em;
+  right: 6em;
+
+  display: inline-block;
+  padding: .4em;
+  text-align: center;
+
+  transform: rotate(-10deg);
+}
+
+
+section:first-of-type div:nth-of-type(2) >*{
+  color: var(--color2);
+  background-color: var(--color3);
+  padding: .2em;
+  
+  transition: 250ms;
+}
+
+
+section:first-of-type div:nth-of-type(2) >*:hover{
+  background-color: var(--color2);
+  color: var(--color3);
+
+  cursor: pointer;
+}
+
+
 section:first-of-type div:nth-of-type(2) time{
   padding: .3em;
 }
+
 
 /* ruimte h2 en time */
 section:first-of-type div:nth-of-type(2) h2{
@@ -297,9 +296,10 @@ section:first-of-type div:nth-of-type(2) h2{
 }
 
 
-
 /* FORM */
 
+
+/*styling hele form*/
 form{
   position: absolute;
   top: 12em;
@@ -311,6 +311,7 @@ form{
   display: flex;
   flex-direction: column;  
 }
+
 
 form input, select {
   background-color: var(--main-color);
@@ -326,13 +327,13 @@ form input, select {
 }
 
 
-form input:hover{
-  cursor: auto;
+form select{
+  cursor: pointer;
 }
 
 
-form select{
-  cursor: pointer;
+form input:hover{
+  cursor: auto;
 }
 
 
@@ -344,6 +345,7 @@ form input::placeholder{
 /*SECTION TWEE*/
 
 
+/* styling data en artiesten */
 section:nth-of-type(2){
   position: relative;
   top: 19em;
